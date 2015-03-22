@@ -1,16 +1,4 @@
-This REPO is the course project submission for the Coursera course: Getting and Cleaning Data, part of the Data Science Specialized Track.  All code is designed for data from the 
-
-==================================================================
-Human Activity Recognition Using Smartphones Dataset
-Version 1.0
-==================================================================
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
-==================================================================
+This REPO is the course project submission for the Coursera course: Getting and Cleaning Data, part of the Data Science Specialized Track.  All code is designed for data from the Human Activity Recognition Using Smartphones Dataset, Version 1.0.
 
 More details about the underlying data, and information about how to access it are at the bottom of this CodeBook.
 
@@ -31,7 +19,7 @@ bigdata - the original table of test and training data loaded together
 extract - a subset of bigdata, showing only the variables that are means or standard deviations
 extract.a - a subset of extract used for aggregations and creating 'agg'
 extract.x - a subset of extract used for aggregations and creating 'agg'
-features - the table of feature classes, from UCI's data: "features.txt"
+features - the table of feature classes, from: "features.txt"
 labelVals - a table of lookups for the plain language activity types (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 labels - the combined output of codes from test and training data, used to identify what activity was observed
 subs - the combined output of subject IDs for each observation, from test and training data combined
@@ -47,10 +35,21 @@ stdIndex: an integer list of features containing "std()"
 
 
 
-Additional information about the data and underlying experiments, taken verbatum from the UCI data webpage:
+Additional information about the data and underlying experiments, taken verbatum from the dataset webpage:
 
 
 
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
 
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
