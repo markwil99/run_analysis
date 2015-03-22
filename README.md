@@ -7,6 +7,10 @@ The zipfile will need to be unzipped into a directory similar to the following: 
 
 This R script requires the 'plyr' package.  If you do not already have plyr installed, you'll need to do so.
 
-This code builds several dataframes from .txt files contained within the unpacked zipfile above, manipulates them, combines them, and extracts relevant sensor measurements for aggregation across 6 activity types and 30 observed subjects.  The output file (ActivityAverages.txt) is included in this repo.
+This code builds several dataframes from .txt files contained within the unpacked zipfile above, manipulates them, combines them, and extracts relevant sensor measurements for aggregation across 6 activity types and 30 observed subjects.  The code first reads and combines the test and train datasets, then reads the respective label files and adds them to the combined dataset, then reads the subject files and adds them to the combined dataset.  The code then subsets the combined dataset, using an index of the variables containing either "mean()" or "std()", as found in the features.txt file.  This subset dataset (extract) contains 66 variables.  It is then complemented with activity labels (which require a lookup to get plain language descriptions) and subjet IDs.  Column names are then renamed with descriptive names from the features.txt file.
+
+Lastly, in order to aggregate means by activity and subject, we create two subsets of the 'extract' dataframe, one with the groups, and one without.  Then using the aggregate() function, we can calculate mean by the appropriate levels.
+
+The output file (ActivityAverages.txt) is included in this repo.
 
 Cheers.
